@@ -1,0 +1,86 @@
+[project]
+name = "AnemiaProject"
+version = "0.1.0"
+description = "Proyecto de clasificación para predecir la probabilidad de anemia en niños usando LightGBM."
+authors = [
+    { name = "Pedro Casaverde" },
+    { name = "Sherly Salazar" },
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+# --- LIBRERÍAS PRINCIPALES DEL PROYECTO ---
+dependencies = [
+    # Para manipulación de datos
+    "pandas",
+    "numpy",
+
+    # Para el modelo de Machine Learning y evaluación
+    "lightgbm",
+    "scikit-learn",
+
+    # Para visualización de datos
+    "matplotlib",
+    "seaborn",
+    "plotly", # Para gráficos interactivos
+
+    # Para trabajar en notebooks
+    "jupyterlab",
+    "ipykernel",
+
+    # Para interpretabilidad del modelo (muy recomendado)
+    "shap",
+
+    # Utilidades
+    "tqdm", # Barras de progreso
+]
+
+[project.urls]
+documentation = "https://PedroCasaverde.github.io/anemia-project"
+repository = "https://github.com/PedroCasaverde/anemia-project"
+
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.2.0", # Code linting and formatting
+    "pytest>=8.3.5", # Testing framework
+    "pytest-cookies>=0.7.0",
+    "pytest-cov>=6.1.1",
+    "cruft[pyproject]>=2.15.0",# Automated Cookiecutter template synchronization
+]
+
+#
+docs = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.5.49",
+    "mkdocstrings[python]>=0.28.1",
+    "pymdown-extensions>=10.14.3",
+]
+#
+
+[tool.uv]
+package = false
+default-groups = [
+    "dev",
+#
+    "docs",
+#
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.coverage.paths]
+source = ["src/"]
+
+[tool.coverage.run]
+source = ["src"]
+omit = ["**/__init__.py"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/anemia_project"]
