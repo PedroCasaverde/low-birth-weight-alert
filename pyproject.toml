@@ -11,28 +11,24 @@ readme = "README.md"
 
 # --- LIBRERÍAS PRINCIPALES DEL PROYECTO ---
 dependencies = [
-    # Para manipulación de datos
-    "pandas",
-    "numpy",
+    "pandas>=2.2",
+    "numpy>=1.26",
 
-    # Para el modelo de Machine Learning y evaluación
-    "lightgbm",
-    "scikit-learn",
+    "scikit-learn>=1.4.2,<1.6",
+    "imbalanced-learn>=0.12,<0.13",
 
-    # Para visualización de datos
-    "matplotlib",
-    "seaborn",
-    "plotly", # Para gráficos interactivos
+    "lightgbm>=4.3",
+    "xgboost>=2.0",
 
-    # Para trabajar en notebooks
-    "jupyterlab",
-    "ipykernel",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "plotly>=5.20",
 
-    # Para interpretabilidad del modelo (muy recomendado)
-    "shap",
-
-    # Utilidades
-    "tqdm", # Barras de progreso
+    "jupyterlab>=4.3",
+    "ipykernel>=6.29",
+    "shap>=0.45",
+    "tqdm>=4.66",
+    "geopy",
 ]
 
 [project.urls]
@@ -83,4 +79,4 @@ source = ["src"]
 omit = ["**/__init__.py"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/anemia_project"]git 
+packages = ["src/anemia_project"]
