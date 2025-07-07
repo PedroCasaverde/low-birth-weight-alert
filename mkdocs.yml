@@ -1,5 +1,5 @@
-site_name: "Anemia Project"
-repo_url: "https://github.com/PedroCasaverde/anemia-project"
+site_name: "LBW Alert"
+repo_url: "https://github.com/PedroCasaverde/low-birth-weight-alert"
 
 theme:
   name: material

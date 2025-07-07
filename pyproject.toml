@@ -1,7 +1,7 @@
 [project]
-name = "AnemiaProject"
+name = "LBW_Alert"
 version = "0.1.0"
-description = "Proyecto de clasificación para predecir la probabilidad de anemia en niños usando LightGBM."
+description = "Proyecto de clasificación para predecir la probabilidad de bajo peso en recién nacidos"
 authors = [
     { name = "Pedro Casaverde" },
     { name = "Sherly Salazar" },
@@ -32,8 +32,8 @@ dependencies = [
 ]
 
 [project.urls]
-documentation = "https://PedroCasaverde.github.io/anemia-project"
-repository = "https://github.com/PedroCasaverde/anemia-project"
+documentation = "https://PedroCasaverde.github.io/low-birth-weight-alert"
+repository = "https://github.com/PedroCasaverde/low-birth-weight-alert"
 
 
 [dependency-groups]
@@ -79,4 +79,4 @@ source = ["src"]
 omit = ["**/__init__.py"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/anemia_project"]
+packages = ["src/low-birth-weight-alert"]
