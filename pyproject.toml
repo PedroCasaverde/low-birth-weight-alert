@@ -26,7 +26,6 @@ dependencies = [
 
     "jupyterlab>=4.3",
     "ipykernel>=6.29",
-    "shap>=0.45",
     "tqdm>=4.66",
     "geopy",
 ]
