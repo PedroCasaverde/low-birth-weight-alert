@@ -71,6 +71,7 @@ target/
 #files
 *.csv
 *.pdf
+*.out
 
 # Caches
 .mypy_cache/
