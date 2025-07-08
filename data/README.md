@@ -21,7 +21,7 @@ Almacena el objeto del modelo final, entrenado y serializado (guardado en un arc
 Contiene los artefactos generados que resumen el rendimiento y las características del modelo.
 
 * **Métricas Guardadas:** Tablas (`.csv`) con los resultados de la validación cruzada y el rendimiento final del modelo.
-* **Visualizaciones:** Gráficos (`.png`) como la importancia de las características o la matriz de confusión, guardados para su fácil consulta.
+* **Visualizaciones:** Gráficos (`.jpg`) como la importancia de las características o la matriz de confusión, guardados para su fácil consulta.
 
 ---
 ## Fuentes de Datos y Referencias
