@@ -1,9 +1,3 @@
-# ignore everything in the following folders
-data/**
-
-
-
-
 # also keep all .gitkeep files
 !.gitkeep
 
